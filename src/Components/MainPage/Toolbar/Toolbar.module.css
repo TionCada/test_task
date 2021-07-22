@@ -1,0 +1,60 @@
+.container {
+    display: inline-block;
+}
+
+.error {
+    color: #CF0000;
+    font-size: 12px;
+}
+
+.field {
+    max-width: fit-content;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.numberInput {
+    background-color: #F8F5F1;
+}
+
+label {
+    display: block;
+    max-width: fit-content;
+    margin-left: 0;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+    display: block;
+    max-width: fit-content;
+    outline: none;
+}
+
+.radio {
+    margin-left: 43px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.actorsTitle p {
+    font-size: 18px;
+}
+
+.actorsForm {
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+.format p {
+    font-size: 16px;
+}

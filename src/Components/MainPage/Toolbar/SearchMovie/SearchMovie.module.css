@@ -1,0 +1,12 @@
+.button {
+    display: inline-block;
+    margin-left: 4px;
+}
+
+.searchBar {
+    display: inline-block;
+}
+
+.field {
+    display: inline-block;
+}

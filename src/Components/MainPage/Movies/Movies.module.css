@@ -1,0 +1,23 @@
+.container {
+    background-color: #FFFFFF;
+    margin-top: 10px;
+    box-shadow: #0940a7 0px 4px 12px;
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+}
+
+.message {
+    font-size: 20px;
+}
+
+.container p {
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.container button {
+    display: inline-block;
+    margin-left: 25px;
+}

@@ -1,0 +1,39 @@
+.container {
+    background-color: #FFFFFF;
+    max-width: 250px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: 11px;
+    box-shadow: #0940a7 0px 4px 12px;
+    margin-bottom: 10px;
+}
+
+.container p {
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    color: #353535;
+}
+
+.error {
+    color: #CF0000;
+    font-size: 12px;
+}
+
+.field {
+    width: 168px;
+    position: relative;
+    bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
