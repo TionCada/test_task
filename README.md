@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Application FAQ
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+## What it is? 🤔
+Everything is simple, this project is as a test task for the WebbyLab company!
 
-In the project directory, you can run:
+## What technologies were used? 🛠️
+The project consists of 2 parts - client and server, and this repo contains the first one. For everyone's sake, both of them were published as a containers on a Docker Hub. So all you need to do - is to pull them to your machine and run (detailed instruction can be found via the links below). 
+- Backend container can be found here: https://hub.docker.com/r/webbylabhub/movies
+- And frontend continer can be found over there: https://hub.docker.com/r/anovak123456/test_task_client
 
-### `npm start`
+Now let's take a closer look at the stack of used technologies at the frontend part:
+- React/Redux
+- Javascript
+- HTML/CSS
+- Formik
+- Axios
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## What is the app structure? 🏗️
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The main idea was to decompose the app into several layers: UI, BLL, and DAL: 
+- UI part is located in the 'Components' folder. It's mainly functional components that return JSX, but they can also contain some simple logic. All of these components are arranged in the hierarchical order, in their folders. Each folder contains a component file, module CSS file, and, if necessary, container component file.
+- BLL part is located in the 'Redux' folder. There you can find several reducer files and store file, which combine the first ones. 'auth-reducer' is responsible for all operations related to the authentication processes (login, registration). And 'movies-reducer' is responsible for all operations related to the actions, user can apply to movies (delete, add, sort, etc). 
+- DAL part is located in the 'API' folder. It is the code, needed for sending the requests to the server. It is 'divided' into authAPI and moviesAPI parts. Also, to make it work, I was using Axios library. 
 
-### `npm test`
+## How to start the app? 🏁
+As it was mentioned earlier, first things first, you need to pull both frontend and backend docker containers to your machine (p.s. Don't forget to install Docker before doing this stuff). The links can be found above. Then you need to run them according to the instructions. To open the app you need to open the 80 port (by default) in your browser. And all is done!  
+  
+OR
+  
+If you want to run the frontend part of the application via NPM, you need to:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- clone or download the project from https://github.com/TionCada/test_task
+- install Node.js v10.19.0+
+- install npm packages
+- open terminal and write 'npm start' 
